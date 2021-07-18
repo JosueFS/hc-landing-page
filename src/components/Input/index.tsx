@@ -1,11 +1,7 @@
 import React, {
   InputHTMLAttributes,
-  useState,
-  useRef,
-  useCallback,
   forwardRef
 } from 'react';
-import { useEffect } from 'react';
 import { IconBaseProps } from 'react-icons';
 
 import './styles.css';
