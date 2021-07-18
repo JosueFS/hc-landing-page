@@ -16,9 +16,14 @@ const Form: React.FC = () => {
 
       inputName.current.value = '';
       inputEmail.current.value = '';
+
+      
+      alert('Admirável! Você receberá instruções de como reforçar sua tropa a partir de 01/09/2021!')
+      
+      inputName.current?.parentElement?.classList.remove("filled");
+      inputEmail.current?.parentElement?.classList.remove("filled");
     }
 
-    alert('Admirável! Você receberá instruções de como reforçar sua tropa a partir de 01/09/2021!')
   }, []);
 
 
