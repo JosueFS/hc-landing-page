@@ -1,0 +1,54 @@
+div.input-container {
+  display: flex;
+  align-items: center;
+  min-width: 180px;
+  height: 48px;
+  border-radius: 10px;
+  padding: 16px;
+
+  border: 2px solid #292b34;
+  color: #292b34;
+  background-color: #ffffff;
+
+  /* ${props =>
+    props.isFocused &&
+    css`
+      color: #fb5656;
+      border-color: #fb5656;
+    `}
+  ${props =>
+    props.isFilled &&
+    css`
+      color: #fb5656;
+    `} */
+  /* margin-bottom: 8px; */
+}
+
+input {
+  font-size: 16px;
+  line-height: 24px;
+  background: transparent;
+  color: #292b34;
+  border: 0;
+}
+
+.focused {
+  border-color: #fb5656 !important;
+}
+
+.focused input,
+.focused svg {
+  color: #fb5656;
+}
+
+.filled svg {
+  color: #fb5656;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+svg {
+  margin-right: 8px;
+}
